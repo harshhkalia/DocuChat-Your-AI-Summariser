@@ -1,0 +1,17 @@
+# Core dependencies
+fastapi
+uvicorn
+python-multipart
+pillow
+pdfplumber
+pytesseract
+python-dotenv
+
+# Haystack and Integrations
+haystack-ai
+google-ai-haystack
+sentence-transformers
+
+google-generativeai
+
+easyocr

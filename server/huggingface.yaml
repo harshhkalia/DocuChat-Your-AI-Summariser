@@ -1,0 +1,4 @@
+hardware: cpu-upgrade
+disk: 5GB
+build:
+  machine: cpu.large
