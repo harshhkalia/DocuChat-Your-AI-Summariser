@@ -69,6 +69,7 @@ Start the frontend: npm start
 Open your browser at http://localhost:3000 (or the specified port) and start uploading documents!
 
 🚨 Note: Always activate the virtual environment before running commands, or things might get weird! 😅 If you encounter issues, check for missing API keys (e.g., for any external AI services) in a .env file.
+
 Usage
 
 Upload your document (PDF, image, etc.) via the web interface.
