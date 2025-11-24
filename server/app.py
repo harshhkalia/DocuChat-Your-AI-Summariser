@@ -29,11 +29,10 @@ app.add_middleware(
 
 @app.post("/upload")
 async def upload_files(
-    session_id: str = Form(default=""),  # Allow empty string
+    session_id: str = Form(default=""),  
     files: List[UploadFile] = File(...)
 ):
     """Upload and process files with automatic session management"""
-    # Generate session ID if not provided
     if not session_id.strip():
         session_id = str(uuid.uuid4())
     
@@ -84,3 +83,4 @@ async def healthz():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 7860)))
+
