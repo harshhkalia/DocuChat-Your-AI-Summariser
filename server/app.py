@@ -8,8 +8,6 @@ import uuid
 import os
 os.environ["HAYSTACK_TELEMETRY_ENABLED"] = "False"
 
-sccsca
-
 app = FastAPI(
     title="Haystack RAG API",
     description="PDF Summarization and Question Answering System",
@@ -85,5 +83,6 @@ async def healthz():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 7860)))
+
 
 
